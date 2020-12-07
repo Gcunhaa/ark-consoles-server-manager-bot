@@ -1,0 +1,44 @@
+auth:
+    bot-token: ''
+
+settings:
+    command-prefix: '!'
+
+modules:
+    suggestion:
+        channel-name: '【📜】suggestions'
+        core-embed:
+            title: ':scroll: Suggestion'
+            footer: 'Suggested by {username}'
+            color: 33ff64
+        syntax-embed:
+            title: ':scroll: Suggestion'
+            description: 'Wrong command syntax, try: !suggest <text>' 
+            footer: 'Chaos Void Helper'
+            color: 33ff64
+    
+    links:
+        embed:
+            title: 'Chaos Void | Link'
+            footer: 'Chaos Void Helper'
+            color: 33ff64
+        link-list:
+            Discord Invite: https://discord.gg
+            YT Channel: https://youtube.com/
+            Website: https://gcunha.com
+    
+    ticket:
+        channel-name: '【🎫】tickets'
+        create-ticket-emoji: '📩'
+        close-ticket-emoji: '🔒'
+        suport-team-role: 'suporte'
+        create-embed:
+            title: '📑 Ticket system'
+            description: 'To create a ticket react with 📩'
+            footer: Chaos Void Helper
+            color: 33ff64
+        close-embed:
+            title: '📑 Ticket system'
+            description: 'Support will be with you shortly.To close this ticket react with: 🔒'
+            footer: Chaos Void Helper
+            color: 33ff64
