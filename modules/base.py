@@ -21,3 +21,6 @@ class Base(commands.Cog):
     """
     def load_module_event(self):
         pass
+    
+    async def reload_cog(self, licence_id : int):
+        pass

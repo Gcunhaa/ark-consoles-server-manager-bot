@@ -1,44 +1,56 @@
 auth:
-    bot-token: ''
+    bot-token: 'NzgzMzQxMDQxNTcwNjc2ODA3.X8ZVMg.C7Lz8-SIDZS8LMfvH1swQY6RFfs'
+sql:
+    hostname: localhost
+    port: 5432
+    user: postgres
+    password: postgres
+    db: ark-bot
+
+redis:
+    hostname: 'redis://redis-13113.c91.us-east-1-3.ec2.cloud.redislabs.com:13113'
+    password: '2Pw2rGli4g18YWCHST8lSmwtHq76wldb'
 
 settings:
     command-prefix: '!'
+    core-server-id: 784514443479351346
+    footer:
+        text: 'Ark Consoles Server Manager' 
+    dashboard-endpoint: 'http://localhost/dashboard/'
 
 modules:
-    suggestion:
-        channel-name: '【📜】suggestions'
-        core-embed:
-            title: ':scroll: Suggestion'
-            footer: 'Suggested by {username}'
-            color: 33ff64
-        syntax-embed:
-            title: ':scroll: Suggestion'
-            description: 'Wrong command syntax, try: !suggest <text>' 
-            footer: 'Chaos Void Helper'
-            color: 33ff64
-    
-    links:
-        embed:
-            title: 'Chaos Void | Link'
-            footer: 'Chaos Void Helper'
-            color: 33ff64
-        link-list:
-            Discord Invite: https://discord.gg
-            YT Channel: https://youtube.com/
-            Website: https://gcunha.com
-    
+    licence:
+        new-licence-emoji: '📑'
+        no-licence:
+            embed:
+                title: 'Licences Info'
+                description: "You dont have any licence.\nIf want to **create** one, please **react** with 📑"
+                color: 33ff64
+        show-licences:
+            embed:
+                title: 'Licences Info'
+                description: "This are your licences .\nReact with the emoji to show more info.\nTo create a licence, react with: 📑\n"
+                color: 33ff64
+
     ticket:
-        channel-name: '【🎫】tickets'
-        create-ticket-emoji: '📩'
-        close-ticket-emoji: '🔒'
-        suport-team-role: 'suporte'
-        create-embed:
-            title: '📑 Ticket system'
-            description: 'To create a ticket react with 📩'
-            footer: Chaos Void Helper
+        panel:
+            embed:
+                title: '[📜] Ticket'
+                color: 33ff64
+        error:
+            embed:
+                title: '[📜] Ticket'
+                color: 33ff64
+        create-emoji: '📑'
+    
+    suggestion:
+        core-embed:
+            title: '[📜] Suggestion'
+            footer: 
+                text: 'Suggested by {username}'
             color: 33ff64
-        close-embed:
-            title: '📑 Ticket system'
-            description: 'Support will be with you shortly.To close this ticket react with: 🔒'
-            footer: Chaos Void Helper
+
+    moderation:
+        core-embed:
+            title: 'Moderation'
             color: 33ff64
