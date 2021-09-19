@@ -1,5 +1,5 @@
 auth:
-    bot-token: 'NzgzMzQxMDQxNTcwNjc2ODA3.X8ZVMg.C7Lz8-SIDZS8LMfvH1swQY6RFfs'
+    bot-token: ''
 sql:
     hostname: localhost
     port: 5432
@@ -8,8 +8,8 @@ sql:
     db: ark-bot
 
 redis:
-    hostname: 'redis://redis-13113.c91.us-east-1-3.ec2.cloud.redislabs.com:13113'
-    password: '2Pw2rGli4g18YWCHST8lSmwtHq76wldb'
+    hostname: ''
+    password: ''
 
 settings:
     command-prefix: '!'
