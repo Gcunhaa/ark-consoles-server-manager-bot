@@ -87,8 +87,8 @@ class Paypal(ClientSession):
     async def create_plan(self, product_id: string, name: string, billing_cycles[])
 
 
-paypal = Paypal(client_id='AQe1TviDM0qgWN9jjBkrFBYrrZoGVrx-1B_6XfMhIHwG245MwRqA4Wt1NIxgrfALXKgMw55r9qI5pw8Z',
-                secret='EKzz7v1XX538khOZQvUcmJh7s3P91BWL0wC98nINx8xqB1A0p0xmKT3xly8CkSrU_qvUP-1ZUhVMzcNq')
+paypal = Paypal(client_id='',
+                secret='')
 
 
 class PaypalCog(Base):
